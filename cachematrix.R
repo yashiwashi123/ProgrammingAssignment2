@@ -1,7 +1,8 @@
 ## Goal: I am going to make it possible to cache the inverse of a matrix. I am doing this because 
 ##it is costly to repeatedly invert a matrix
 
-## Write a short comment describing this function
+##makeCacheMatrix() is a function that returns a list of functions allowing the user to
+##get the matrix, set the matrix, get the inverse of the matrix and set the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -17,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## This function will check to see if the matrix has an inverse cached, if not it will
-##calculate and store it
+##calculate a new one using solve() and store it. 
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
